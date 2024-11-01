@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: "Josefin Sans";
+}
+.container {
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: " 60px 0";
+}
+.section1 {
+  padding: 0 30px;
+}
+
+.blue-bg {
+  background-color: #2b648a;
+}
+.bluer-bg {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.custom-bg {
+  background-image: url("./assets/section1/blueBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+.h-bg {
+  background: "#c7c6c680";
+}
+#sidebar {
+  max-height: 0;
+  overflow: hidden;
+  transition: "max-height 0.5s ease, opacity 0.5s ease";
+}
+
+#sidebar.show {
+  max-height: 300px;
+}
+#sidebar-ar {
+  max-height: 0;
+  overflow: hidden;
+  transition: "max-height 0.5s ease, opacity 0.5s ease";
+}
+
+#sidebar-ar.show {
+  max-height: 300px;
+}
+.yellow-gradient {
+  background: linear-gradient(163.68deg, #ffed8c 15.43%, #f4b335 83.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*section2*/
+.section2-bg {
+  background: url("./assets/section2/section2 background.png");
+  background-size: cover;
+  padding: 60px 0;
+  color: #212529;
+}
+/*section 3*/
+.section3 {
+  padding: 20px;
+  color: #fff;
+  background-image: url("./assets/section3/section3 bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 40px 20px;
+}
+.hotels {
+  text-align: center;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./assets/section3/lines.png");
+  background-size: 100%;
+  top: 0;
+  left: 0;
+}
+
+.info {
+  font-family: "DIN2";
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 1px dashed #fff;
+  background: #2b648a;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: 100%;
+  gap: 10px;
+  padding: 20px;
+}
+.icon {
+  margin-top: 3px;
+}
+.s-icons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.footer {
+  background-image: url("./assets/section3/Rectangle 14.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken, normal;
+  padding: 20px 0;
+  background-color: rgb(36, 36, 54);
+}
+.lists {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+.copy {
+  background-image: url("./assets/section3/Rectangle\ 14.png");
+  background-size: cover;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Staggered animation delay for each card */
+.card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  visibility: visible;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+}
+@media (min-width: 640px) {
+  .sm\:w-\[450px\] {
+    width: 450px;
+  }
+}
+@media (min-width: 640px) {
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+@media (min-width: 640px) {
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+}
+@media (min-width: 640px) {
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:w-fit {
+    width: fit-content;
+  }
+}
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .md\:justify-center {
+    justify-content: center;
+  }
+}
+@media (min-width: 640px) {
+  .sm\:justify-center {
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+}
