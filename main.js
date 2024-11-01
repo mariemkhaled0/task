@@ -1,3 +1,13 @@
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import anime from "animejs/lib/anime.es.js";
+
+// AOS.init({
+//   duration: 300,
+//   easing: "ease-in-out",
+//   once: true,
+// });
+
 // const arabicMenu = document.getElementById("arabic-menu");
 // const englishMenu = document.getElementById("english-menu");
 
@@ -23,13 +33,6 @@
 //   }
 // }
 // Select the hamburger button and sidebar
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init({
-  duration: 800, // Animation duration in milliseconds
-  easing: "ease-in-out", // Easing function
-  once: true, // Whether animation should happen only once
-});
 
 const hamburger = document.getElementById("hamburger");
 const closeButton = document.getElementById("close-button");
@@ -79,29 +82,19 @@ function formatNumber(num) {
 function animateNumber() {
   anime({
     targets: "#animatedNumber",
-    innerHTML: [100, 580500],
-    easing: "linear",
+    innerHTML: [20, 580.5], // Range from 20 to 580.5
+    easing: "easeInOutQuad", // Smoother easing for gradual transition
     round: 1,
-    duration: 3000,
+    duration: 3000, // Adjust duration as needed
     update: function (anim) {
-      const currentValue = Math.round(
-        (anim.progress / 100) * (580500 - 100) + 100
-      );
-      document.getElementById("animatedNumber").innerHTML =
-        formatNumber(currentValue);
+      const currentValue = (anim.progress / 100) * (580.5 - 20) + 20; // Animate between 20 and 580.5
+      document.getElementById("animatedNumber").innerHTML = formatNumber(
+        currentValue * 1000
+      ); // Display in "K" format
     },
   });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   animateNumber();
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-
-  cards.forEach((card, index) => {
-    setTimeout(() => {
-      card.classList.add("show");
-    }, index * 200); // delay by 200ms for each card
-  });
 });
