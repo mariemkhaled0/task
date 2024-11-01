@@ -129,8 +129,9 @@ body {
   flex-wrap: wrap;
 }
 .copy {
-  background-image: url("./assets/webp/Rectangle 14.webp");
+  background-image: url("./assets/webp/Rectangle\ 14.webp");
   background-size: cover;
+  background-position: center;
 }
 
 @keyframes fadeIn {
