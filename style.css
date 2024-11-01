@@ -129,7 +129,7 @@ body {
   flex-wrap: wrap;
 }
 .copy {
-  background-image: url("./assets/section3/Rectangle .png");
+  background-image: url("./assets/webp/Rectangle\ 14.webp");
   background-size: cover;
 }
 
@@ -144,23 +144,11 @@ body {
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .card {
   opacity: 0;
   animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
-/* Staggered animation delay for each card */
 .card:nth-child(1) {
   animation-delay: 0.2s;
 }
@@ -179,6 +167,16 @@ body {
 }
 .flex-row {
   flex-direction: row;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 768px) {

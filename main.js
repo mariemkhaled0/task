@@ -23,6 +23,14 @@
 //   }
 // }
 // Select the hamburger button and sidebar
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+  duration: 800, // Animation duration in milliseconds
+  easing: "ease-in-out", // Easing function
+  once: true, // Whether animation should happen only once
+});
+
 const hamburger = document.getElementById("hamburger");
 const closeButton = document.getElementById("close-button");
 const sidebar = document.getElementById("sidebar");
