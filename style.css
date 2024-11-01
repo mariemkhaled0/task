@@ -29,7 +29,7 @@ body {
 }
 
 .custom-bg {
-  background-image: url("./assets/section1/blueBackground.png");
+  background-image: url("./assets/webp/blueBackground.webp");
   background-size: cover;
   background-position: center;
 }
@@ -70,7 +70,7 @@ body {
 .section3 {
   padding: 20px;
   color: #fff;
-  background-image: url("./assets/section3/section3\ bg\ \(1\).png");
+  background-image: url("./assets/webp/section3\ bg.webp");
   background-size: cover;
   background-position: center;
 }
@@ -114,7 +114,7 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .footer {
-  background-image: url("./assets/section3/Rectangle\ .png");
+  background-image: url("./assets/webp/Rectangle\ 14.webp");
   background-size: cover;
   background-position: center;
   background-blend-mode: darken, normal;
