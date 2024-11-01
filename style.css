@@ -157,7 +157,7 @@ body {
 
 .card {
   opacity: 0;
-  animation: fadeInUp 0.5s ease forwards;
+  animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
 /* Staggered animation delay for each card */
