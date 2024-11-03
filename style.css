@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "DIN Next LT W23";
+  src: url("path-to-font/DINNextLTW23-Regular.woff2") format("woff2"),
+    url("path-to-font/DINNextLTW23-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+Apply the font to specific elements */
+body {
+  font-family: "DIN Next LT W23";
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,18 +22,26 @@ html {
   height: 100%;
 }
 body {
-  font-family: "Josefin Sans";
+  font-family: "Inter", sans-serif;
+  font-family: "DIN Next LT W23", sans-serif;
 }
 .container {
-  width: 87%;
+  width: 84.3%;
   margin-left: auto;
   margin-right: auto;
   padding: " 60px 0";
 }
-.section1 {
-  padding: 0 30px;
+.hamburger-div {
+  width: 30px;
+  height: 3px;
 }
-
+.section1 {
+  font-family: "DIN Next LT W23", sans-serif;
+  font-weight: 400;
+}
+.sec1-img {
+  max-width: 600px;
+}
 .blue-bg {
   background-color: #2b648a;
 }
@@ -34,7 +55,10 @@ body {
   background-position: center;
 }
 .h-bg {
-  background: "#c7c6c680";
+  background: "#2b648a47";
+}
+.li:hover {
+  background: #2b648a47;
 }
 #sidebar {
   max-height: 0;
@@ -59,20 +83,21 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /*section2*/
 .section2-bg {
   background: url("./assets/section2/section2\ background\ \(1\).png");
   background-size: cover;
-  padding: 60px 0;
-  color: #212529;
+
+  padding-bottom: 51px;
 }
 /*section 3*/
 .section3 {
-  padding: 20px;
   color: #fff;
   background-image: url("./assets/webp/section3\ bg.webp");
   background-size: cover;
   background-position: center;
+  justify-content: center;
 }
 
 .content {
@@ -94,7 +119,6 @@ body {
 }
 
 .info {
-  font-family: "DIN2";
   display: flex;
   align-items: flex-start;
   border-radius: 10px;
@@ -104,7 +128,8 @@ body {
   width: 100%;
   max-width: 100%;
   gap: 10px;
-  padding: 20px;
+  padding: 20px 23px;
+  line-height: 35px;
 }
 .icon {
   margin-top: 3px;
@@ -113,13 +138,15 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.card {
+  max-width: 570px;
+}
 .footer {
   background-image: url("./assets/webp/Rectangle\ 14.webp");
   background-size: cover;
   background-position: center;
   background-blend-mode: darken, normal;
   padding: 20px 0;
-  background-color: rgb(36, 36, 54);
 }
 .lists {
   display: flex;
@@ -132,6 +159,9 @@ body {
   background-image: url("./assets/webp/Rectangle\ 14.webp");
   background-size: cover;
   background-position: center;
+
+  display: flex;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -145,10 +175,10 @@ body {
   }
 }
 
-.card {
+/* .card {
   opacity: 0;
   animation: fadeInUp 1.5s ease-in-out forwards;
-}
+} */
 
 .card:nth-child(1) {
   animation-delay: 0.2s;
@@ -240,5 +270,39 @@ body {
 @media (min-width: 1024px) {
   .lg\:justify-between {
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 988px) and (max-width: 1030px) {
+  .sec1-img {
+    height: 500px;
+  }
+  .header {
+    /* padding: 10px 20px; */
+    width: 100%;
+  }
+  .sec1-content h1 {
+    font-size: 40px;
+  }
+  .container {
+    width: 96%;
+  }
+  .sec1-icons {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:gap-48 {
+    gap: 12rem /* 192px */;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:gap-6 {
+    gap: 1.5rem /* 24px */;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:w-full {
+    width: 100%;
   }
 }

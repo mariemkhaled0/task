@@ -6,14 +6,22 @@
     <title>Tajj</title>
 
     <!-- Custom CSS -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.typekit.net/your-font-kit.css">
       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
      <link rel="stylesheet" href="output.css" />
      <link rel="stylesheet" href="style.css" />
    
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    
+  <!-- Animate.css for animation classes -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- WOW.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  
+
 
   </head>
 
@@ -21,22 +29,22 @@
     <!-- Start of content -->
     <section class="custom-bg section1">
       <header
-        class="flex items-center w-full relative container pt-2 text-white"
+        class="flex items-center w-full relative container pt-4 text-white header"
       >
         <nav class="lg:flex lg:justify-between w-full">
-          <div class="flex justify-between md:p-0 lg:px-0 lg:gap-28">
+          <div class="flex justify-between md:p-0 lg:px-0 lg:gap-56">
             <div class="flex justify-between lg:w-fit w-full">
               <!--tajj logo-->
               <a href="#">
-                <img src="./assets/section1/TajjLogo.svg" alt="logo" />
+                <img width="124" height="64" src="./assets/section1/TajjLogo.svg" alt="logo" />
               </a>
 
               <!-- Hamburger button for mobile -->
               <button id="hamburger" class="lg:hidden block">
                 <div class="flex flex-col space-y-1 cursor-pointer">
-                  <div class="w-9 h-1 bg-white rounded"></div>
-                  <div class="w-9 h-1 bg-white rounded"></div>
-                  <div class="w-9 h-1 bg-white rounded"></div>
+                  <div class=" bg-white rounded-[0.25rem] hamburger-div "></div>
+                  <div class="w-9 h-1 bg-white rounded-[0.25rem] hamburger-div"></div>
+                  <div class="w-9 h-1 bg-white rounded-[0.25rem] hamburger-div"></div>
                 </div>
               </button>
               <!--close button-->
@@ -61,23 +69,23 @@
             </div>
 
             <!-- English menu -->
-            <div id="english-menu">
+            <div id="english-menu w-[450] h-[51px]">
               <ul
-                class="hidden  lg:flex items-center justify-center gap-12 bluer-bg px-3 py-4 rounded-lg font-bold"
+                class="hidden lg:flex items-center justify-center gap-12 py-4 px-4 bluer-bg  rounded-lg font-bold"
               >
                 <li class="cursor-pointer blue-bg py-1 px-3 rounded">Home</li>
                 <li
-                  class="cursor-pointer py-1 px-3 rounded hover:bg-[#66849b] transition-colors duration-500"
+                  class="cursor-pointer py-1 px-3 rounded li  transition-colors duration-500"
                 >
                   About us
                 </li>
                 <li
-                  class="cursor-pointer py-1 px-3 rounded hover:bg-[#66849b] transition-colors duration-500"
+                  class="cursor-pointer py-1 px-3 rounded li transition-colors duration-500"
                 >
                   Contact us
                 </li>
                 <li
-                  class="cursor-pointer py-1 px-3 rounded hover:bg-[#66849b] transition-colors duration-500"
+                  class="cursor-pointer py-1 px-3 rounded li transition-colors duration-500"
                 >
                   Download
                 </li>
@@ -189,216 +197,231 @@
           </li>
         </ul>
       </div>
-      <!--section1 english content-->
+      <!--section1  content-->
       <div
-        class="mt-14 eng-content container items-center justify-between w-full flex flex-col lg:flex-row text-white"
+        class="eng-content  container justify-between w-full flex flex-col-reverse  gap-16 lg:flex-row text-white "
+      
       >
-        <div class="fade-in flex flex-col justify-center lg:items-start gap-10">
-          <div class="text-[40px] font-bold space-y-5 items-start">
-            <p>The best restaurants</p>
-            <p>and hotels</p>
-            <p>With the best<span class="yellow-gradient ml-3">Offers</span></p>
-          </div>
-          <div class="text-xl flex flex-col justify-center mx-auto">
-            <p>Tajj application helps you find the right hotel and</p>
-            <p>
-              the best offers to have an excellent experience in the UAE and
-              many
-            </p>
-            <p>other countries</p>
-          </div>
-          <div class="flex items-center gap-4">
+        <img class="wow animate__animated animate__fadeIn sec1-img" data-wow-duration="2s" 
+                data-wow-delay="0.5s"  src="./assets/webp/about.webp" alt="about">
+        <div class="wow animate__animated animate__fadeIn  flex flex-col text-right pt-24  gap-8" data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+          <div class="flex flex-col gap-14 sec1-content ">
+          <h1 class="text-5xl font-bold flex flex-col gap-6">
+           <span>أفضل المطاعم والفنادق</span> 
+            
+            <span> <span>مع أروع</span> 
+            <span class="yellow-gradient ">العروض</span></span>
+          
+          </h1>
+          <p class="text-2xl leading-9"> تطبيق تاج يساعدك فى ايجاد الفندق و المطعم 
+            <br>
+             المناسب مع أفضل العروض لتحظى بتجربة ممتازة  
+              <br> 
+        في  الامارات  والعديد من الدول الأخرى</p>
+            </div>
+          <div class="flex justify-end text-left gap-2 lg:gap-6 sec1-icons pt-8   ">
             <img
-              class="w-[100px]"
+              class="w-[100px] lg:w-full"
+             
               src="./assets/section1/App Gallery Black.svg"
               alt="app gallery logo"
               loading="lazy"
             />
             <img
-              class="w-[100px]"
+               class="w-[100px] lg:w-full"
               src="./assets/section1/App Store Black.svg"
               alt="app store logo"
               loading="lazy"
             />
             <img
-              class="w-[100px] md:w-[200px]"
+               class="w-[100px] lg:w-full"
               src="./assets/section1/Google Play Black.svg"
               alt="google play logo"
               loading="lazy"
             />
           </div>
         </div>
-        <img class="fade-in" width="600px" src="./assets/webp/about.webp" alt="about">
+       
       </div>
       <!--end of section1-->
     </section>
     <!--section 2-->
     <section
-      class="fade-in section2-bg container w-full lg:flex-row flex flex-col text-[#212529] gap-16 justify-between"
+      class=" section2-bg  "
     >
-      <div class="flex flex-col items-center text-center justify-center">
-        <h2 class="text-5xl">340</h2>
-        <h3 class="text-5xl">Hotel</h3>
+    <div class="container pt-44  pb-14 items-center  w-full lg:flex-row flex flex-col gap-16 justify-between wow animate__animated animate__fadeIn" data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+      <div class="flex flex-col items-center  text-center justify-center space-y-3">
+        <h2 id="animatedNumber" class="text-5xl font-bold  mb-8">200</h2>
+        <h3 class=" yellow-gradient text-4xl  mb-8">مستخدم نشط</h3>
         <div class="flex flex-col items-center text-2xl pt-2 space-y-3">
-          <p>Hotels of all</p>
-          <p>levels and with</p>
-          <p>the best deals</p>
+          <p>انضم إلى مستخدمينا واستمتع</p>
+          <p>بخدماتنا</p>
+         
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
-        <h1 class="text-5xl">25</h1>
-        <h2 class="text-5xl">Restaurant</h2>
+      <div class="flex flex-col items-center justify-center space-y-3">
+        <h1 class="text-5xl font-bold  mb-8">500</h1>
+        <h2 class="text-5xl yellow-gradient mb-8">مطعم</h2>
         <div class="flex flex-col items-center text-2xl pt-2 space-y-3">
-          <p>All restaurants</p>
-          <p>with the biggest</p>
-          <p>discounts</p>
+          <p>جميع المطاعم مع اكبر</p>
+          <p>الخصومات</p>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
-        <h1 id="animatedNumber" class="text-5xl">290</h1>
-        <h2 class="text-5xl">Active user</h2>
+      <div class="flex flex-col items-center  justify-center">
+        <h1  class="text-5xl font-bold mb-8">280</h1>
+        <h2 class="text-5xl yellow-gradient mb-8 ">فندق</h2>
         <div class="flex flex-col items-center text-2xl pt-2 space-y-3">
-          <p>Join our users and</p>
-          <p>enjoy our services</p>
+          <p>فنادق من كل المستويات  </p>
+        <p>و بأفضل العروض</p>
         </div>
+      </div>
       </div>
     </section>
     <!--section 3-->
     <section id="section3" class="section3">
-      <div class="content">
-        <div class="flex flex-col md:flex-row container gap-8">
-         <img  class="fade-in" src="./assets/webp/phones.webp" alt="phones" >
+      <div class="content ">
+        <div class="flex flex-col md:flex-row container gap-20 w-full">
+         <img width="440"  class=" wow animate__animated animate__fadeIn"  data-wow-duration="2s" 
+       data-wow-delay="0.3s"
+               src="./assets/webp/phones.webp" alt="phones" >
+         <!--cards 1-->
           <div class="text-content flex flex-col mt-14 gap-10">
-            <h1 class="uppercase text-white text-5xl hotels">HOTELS</h1>
-            <ul id="card" data-aos="fade-up" class="flex flex-col gap-7 card">
-              <li class="info text-white ">
-                <img
-                  class="icon"
-                  src="./assets/section3/checkbox-circle-fill.svg"
-                  alt="icon"
-                />
+            <h1 class="uppercase text-white text-5xl hotels">الفنادق</h1>
+            <ul id="card"  class="flex flex-col gap-7 card">
+              <li class="info text-white text-right wow animate__animated animate__fadeInUp" data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+                
                 <div>
-                  <h3 class="text-2xl">Information & Amenitie</h3>
+                  <h3 class="text-2xl">المعلومات ووسائل الراحة</h3>
                   <p>
-                    We show you all the hotel information and services, as well
-                    as current technology and offers
+                    عرض لك جميع معلومات وخدمات الفندق ، بالإضافة إلى التكنولوجيا والعروض الحالية
                   </p>
                 </div>
-              </li>
-              <li class="info text-white ">
                 <img
                   class="icon"
                   src="./assets/section3/checkbox-circle-fill.svg"
                   alt="icon"
                 />
-                <div>
-                  <h3 class="text-2xl">Room Types</h3>
+              </li>
+              <li class="info text-white text-right wow animate__animated animate__fadeInUp " data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+                <div class="w-full">
+                  <h3 class="text-2xl">أنواع الغرف</h3>
                   <p>
-                    Choose from many wonderful and distinctive rooms according
-                    to what suits you
+                   اختر من بين العديد من الغرف الرائعة والمميزة وفقا لما يناسبك
                   </p>
                 </div>
-              </li>
-              <li  class="info text-white ">
-                <img
+                  <img
                   class="icon"
                   src="./assets/section3/checkbox-circle-fill.svg"
                   alt="icon"
                 />
-                <div class="">
-                  <h3 class="text-2xl">Date & Price</h3>
+              </li>
+              <li  class="info text-white text-right w-full wow animate__animated animate__fadeInUp" data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+                <div class="w-full">
+                  <h3 class="text-2xl">التاريخ والسعر</h3>
                   <p>
-                    Find out prices by date. Choose the appropriate price and
-                    time
+                   اكتشف الأسعار حسب التاريخ. اختر السعر والوقت المناسبين
                   </p>
                 </div>
+                  <img
+                  class="icon"
+                  src="./assets/section3/checkbox-circle-fill.svg"
+                  alt="icon"
+                />
               </li>
             </ul>
           </div>
         </div>
         <!--cards2-->
-        <div class= " container flex flex-col md:flex-row gap-6">
-          <div class="text-content flex flex-col mt-14 gap-10">
-            <img
-               class="fade-in"
+        <div class= " container flex flex-col md:flex-row gap-20 w-full ">
+          <div class="text-content flex flex-col mt-14 gap-10 w-full">
+             <img
               width="400px"
-              src="./assets/section3/Group 71788.svg"
+              src="./assets/section3/restaurant.svg"
               alt="restaurants"
-              loading="lazy"
             />
-            <ul data-aos="fade-up" class="flex flex-col gap-7 card ">
-              <li class="info text-white ">
+            <ul  
+             class="flex flex-col gap-7 card ">
+              <li 
+                 class="info text-white text-right wow animate__animated animate__fadeInUp">
+                <div class="w-full">
+                  <h3 class="text-2xl">افضل المطاعم</h3>
+                  <p>
+                   اختر من بين افضل المطاعم المميزه التي لدينا
+                  </p>
+                </div>
                 <img
                   class="icon"
                   src="./assets/section3/checkbox-circle-fill.svg"
                   alt="icon"
                 />
-                <div>
-                  <h3 class="text-2xl">Information & Amenitie</h3>
-                  <p>
-                    We show you all the hotel information and services, as well
-                    as current technology and offers
-                  </p>
-                </div>
               </li>
-              <li class="info text-white ">
+              <li class="info text-white wow animate__animated animate__fadeInUp " data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+               
+                <div class="text-right w-full">
+                  <h3 class="text-2xl">اجود خدمه</h3>
+                  <p>
+                   خدمه علي اعلى مستوي
+                  </p>
+                </div>
                 <img
                   class="icon"
                   src="./assets/section3/checkbox-circle-fill.svg"
                   alt="icon"
                 />
-                <div>
-                  <h3 class="text-2xl">Room Types</h3>
-                  <p>
-                    Choose from many wonderful and distinctive rooms according
-                    to what suits you
-                  </p>
-                </div>
               </li>
-              <li class="info text-white ">
+              <li class="info text-white  wow animate__animated animate__fadeInUp" data-wow-duration="2s" 
+                data-wow-delay="0.5s">
+                
+                <div class="text-right w-full">
+                  <h3 class="text-2xl">اروع العروض</h3>
+                  <p>
+                    أحدث العروض والخصومات يمكنك الاطلاع على فرص التوفير والاستفادة من الأسعار المنخفضة
+                  </p>
+                </div>
                 <img
                   class="icon"
                   src="./assets/section3/checkbox-circle-fill.svg"
                   alt="icon"
                 />
-                <div class="">
-                  <h3 class="text-2xl">Date & Price</h3>
-                  <p>
-                    Find out prices by date. Choose the appropriate price and
-                    time
-                  </p>
-                </div>
               </li>
             </ul>
           </div>
-         <img class="fade-in" src="./assets/webp/hotelpictures.webp" alt="hotelpictures">
+         <img width="440" class=" wow animate__animated animate__fadeIn"  data-wow-duration="1.5s" 
+       data-wow-delay="0.2s" src="./assets/webp/hotelpictures.webp" alt="hotelpictures">
         </div>
     </section>
      <!--footer-->
  <section class="footer-sec">
-   <footer class="footer px-5  text-white">
+   <footer class="footer px-5  text-white font-bold">
        <div class=" container ">
-        <div class="flex flex-col sm:flex-row md:justify-center lg:justify-between sm:justify-center  mx-auto w-full gap-8   ">
+        <div class="flex flex-col sm:flex-row md:justify-center lg:justify-between sm:justify-center  mx-auto w-full gap-7 md:gap-16 lg:gap-48
+           ">
           <div>
-            <img width="124" src="./assets/section1/TajjLogo.svg" alt="logo" />
+            <img width="120" src="./assets/section1/TajjLogo.svg" alt="logo" />
           </div>
-          <div class="flex md:flex-1 gap-16 justify-between flex-row  sm:flex-col md:flex-row lg:flow-row  lists ">
+          <div class="flex md:flex-1 gap-4 justify-between flex-row  sm:flex-col md:flex-row lg:flow-row  lists text-sm ">
             <div class="space-y-4">
               <p class="py-2 px-4 text-center w-fit blue-bg rounded">Home</p>
-              <p class="hover:bg-[#66849b] transition-colors duration-500 rounded px-4 py-1 cursor-pointer">About us</p>
-              <p class="hover:bg-[#66849b]  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Download</p>
+              <p class="li transition-colors duration-500 rounded px-4 py-1 cursor-pointer">About us</p>
+              <p class="li transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Download</p>
             </div>
             <div class="flex flex-col gap-3">
-              <p class="hover:bg-[#66849b] transition-colors duration-500 rounded px-4 py-1 cursor-pointer" >About Tajj</p>
-              <p class="hover:bg-[#66849b] transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Privacy Policy</p>
-              <p class="hover:bg-[#66849b]  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Terms & conditions</p>
-              <p class="hover:bg-[#66849b]  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">How do restaurants coupons work</p>
-              <p class="hover:bg-[#66849b]  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Delete Account Policy</p>
+              <p class=" li transition-colors duration-500 rounded px-4 py-1 cursor-pointer" >About Tajj</p>
+              <p class="li transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Privacy Policy</p>
+              <p class="li  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Terms & conditions</p>
+              <p class="li  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">How do restaurants coupons work</p>
+              <p class="li  transition-colors duration-500 rounded px-4 py-1 cursor-pointer">Delete Account Policy</p>
             </div>
             <div class="space-y-4">
-              <h3 class="text-3xl ">Follow Us</h3>
-              <div class="flex gap-6">
-                <img src="./assets/section3/facebook.svg" alt="facebook icon" loading="lazy" />
+              <h3 class=" ">Follow Us</h3>
+              <div class="flex gap-9">
+                <img width="36" src="./assets/section3/facebook.svg" alt="facebook icon" loading="lazy" />
                 <img src="./assets/section3/x.svg" alt="x icon" loading="lazy"/>
                 <img src="./assets/section3/insta.svg" alt="insta icon"  loading="lazy"/>
               </div>
@@ -407,11 +430,24 @@
         </div>
       </div>
     </footer>
-        <div class="copy text-white text-lg py-14 "><p class="container"> Copyright © 2022 All Right Reserved Evast Active Media LLC</p></div>
+        <div class="copy text-white py-5  ">
+          <div class="container flex w-full justify-between flex-col sm:flex-row gap-5"> 
+            <p>Copyright © 2022 All Right Reserved Evast Active Media LLC</p>
+            <div class="flex gap-6">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+        </div>
     
     </section>
     <script src="main.js"></script>
+     <script>
+    // Initialize WOW.js after the DOM is loaded
+    new WOW().init();
+    </script>
 
     <!-- End of content -->
   </body>
+   
 </html>
